@@ -1,0 +1,95 @@
+export const spots = [
+  {
+    id: "la-griffith",
+    title: "라라랜드",
+    genre: "로맨스",
+    place: "그리피스 천문대",
+    city: "로스앤젤레스",
+    country: "미국",
+    x: 17,
+    y: 42,
+    scene: "별빛 아래에서 춤을 추는 환상적인 데이트 장면",
+    quote: "A little chance encounter can become a whole new route.",
+    mood: "밤하늘, 재즈, 네온",
+    travelTime: "다운타운 LA에서 차량 약 25분",
+    color: "#ffbf69"
+  },
+  {
+    id: "goblin-quebec",
+    title: "도깨비",
+    genre: "판타지",
+    place: "샤토 프롱트낙",
+    city: "퀘벡",
+    country: "캐나다",
+    x: 31,
+    y: 30,
+    scene: "낯선 도시에서 문을 열고 마주치는 운명적 산책",
+    quote: "A doorway can be a destination.",
+    mood: "겨울, 고성, 첫눈",
+    travelTime: "퀘벡 구시가지 도보 여행 추천",
+    color: "#8ecae6"
+  },
+  {
+    id: "yourname-tokyo",
+    title: "너의 이름은",
+    genre: "애니메이션",
+    place: "스가 신사 계단",
+    city: "도쿄",
+    country: "일본",
+    x: 81,
+    y: 40,
+    scene: "서로를 찾아 헤매던 두 사람이 계단에서 스치는 순간",
+    quote: "Some places keep the memory before the name.",
+    mood: "석양, 계단, 도시의 숨",
+    travelTime: "요츠야역에서 도보 약 10분",
+    color: "#ff7a90"
+  },
+  {
+    id: "amelie-paris",
+    title: "아멜리에",
+    genre: "드라마",
+    place: "카페 데 되 물랭",
+    city: "파리",
+    country: "프랑스",
+    x: 48,
+    y: 36,
+    scene: "작은 친절과 상상력이 일상을 바꾸는 몽마르트의 카페",
+    quote: "Tiny rituals can make a city feel personal.",
+    mood: "몽마르트, 레드 톤, 빈티지",
+    travelTime: "블랑슈역에서 도보 약 3분",
+    color: "#e85d75"
+  },
+  {
+    id: "before-sunrise-vienna",
+    title: "비포 선라이즈",
+    genre: "로맨스",
+    place: "프라터 대관람차",
+    city: "빈",
+    country: "오스트리아",
+    x: 54,
+    y: 38,
+    scene: "하룻밤의 대화가 여행 전체의 기억이 되는 관람차 장면",
+    quote: "The best itinerary sometimes starts as a conversation.",
+    mood: "관람차, 대화, 새벽",
+    travelTime: "프라터슈테른역에서 도보 약 8분",
+    color: "#b8f2e6"
+  },
+  {
+    id: "parasite-seoul",
+    title: "기생충",
+    genre: "스릴러",
+    place: "자하문 터널 계단",
+    city: "서울",
+    country: "대한민국",
+    x: 78,
+    y: 39,
+    scene: "비 오는 밤, 계단을 따라 현실의 층위가 드러나는 장면",
+    quote: "A route can reveal what a city hides.",
+    mood: "비, 계단, 대비",
+    travelTime: "경복궁역에서 버스 또는 도보 이동",
+    color: "#c7f9cc"
+  }
+];
+
+export const titles = ["전체", ...new Set(spots.map((spot) => spot.title))];
+export const genres = ["전체", ...new Set(spots.map((spot) => spot.genre))];

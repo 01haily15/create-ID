@@ -1,0 +1,44 @@
+@media (max-width: 980px) {
+  .toolbar,
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace {
+    min-height: auto;
+  }
+
+  .map-root {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header-actions,
+  .panel-actions {
+    width: 100%;
+  }
+
+  .route-chip,
+  .panel-actions button {
+    flex: 1;
+  }
+
+  .map-topline,
+  .compare {
+    grid-template-columns: 1fr;
+  }
+
+  .map-topline {
+    display: grid;
+  }
+
+  .compare {
+    min-height: 360px;
+  }
+}
